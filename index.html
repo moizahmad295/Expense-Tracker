@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Smart Expense Tracker</title>
+
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="shortcut icon" href="favIcon.png" type="image/png" />
+
+</head>
+
+<body>
+
+  <header>
+    <h1>Smart Expense Tracker</h1>
+    <button class="toggle-btn" id="theme-toggle" aria-label="Toggle Dark Mode">🌙 Dark Mode</button>
+  </header>
+
+  <main>
+
+    <section class="card">
+      <h2>Add Expense</h2>
+      <form id="expense-form">
+        <input type="text" id="description" placeholder="e.g., Grocery shopping" required />
+        <input type="number" id="amount" placeholder="Amount ($)" required />
+        <select id="category">
+          <option value="Food">Food 🍕</option>
+          <option value="Transport">Transport 🚗</option>
+          <option value="Entertainment">Entertainment 🎮</option>
+          <option value="Bills">Bills 💡</option>
+          <option value="Other">Other 📦</option>
+        </select>
+        <button type="submit">➕ Add</button>
+      </form>
+    </section>
+
+    <section class="card">
+      <h2>Expense History</h2>
+      <div id="expense-list" class="expense-list"></div>
+    </section>
+
+    <section class="card ai-tip">
+      <h2>Smart Suggestions 🤖</h2>
+      <p id="tip">Start tracking your expenses to receive insights!</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>Built with 💚 for better budgeting.</p>
+  </footer>
+
+
+  <script src="script.js"></script>
+</body>
+
+</html>
